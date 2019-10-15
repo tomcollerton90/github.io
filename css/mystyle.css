@@ -156,10 +156,10 @@ nav ul li a:hover:before {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-    font-size: 214px;
+    font-size: 25vw;
     text-transform: uppercase;
     color:#fff;
-    letter-spacing: 60px;
+    letter-spacing: 6vw;
 
   cursor: default;
   text-align: justify;
@@ -168,10 +168,11 @@ nav ul li a:hover:before {
 
 #welcome-section > p {
   font-family: 'happytime_italics', sans-serif;
-  font-size: 62px;
+  font-size: 10vw;
   text-transform: uppercase;
   cursor: default;
-  letter-spacing: 20px;
+  letter-spacing: 2vw;
+  padding-left:1%;
 
   position: absolute;
 }
@@ -182,16 +183,20 @@ nav ul li a:hover:before {
 .reference-links {  
   width: 100%;
   background-color: #fff;
-  padding-top:200px;
-  padding-bottom:24px;
+  padding-right:1%;
+  padding-top:2vh;
+  padding-bottom:2vh;
+
 }
+
 
 .reference-links ul {
   display: grid;
   justify-items: right;  
   align-items: center;
-  margin-right: 20px;  
-  margin-top: 10px;  
+  padding-top:10vh;
+
+  
 
 }
 .reference-links ul li  {
@@ -208,9 +213,30 @@ list-style-type: none;
   color: #000;
 }
 
-.reference-links ul li a:hover {
+.reference-links a:hover {
   color: #000;;
 }
+
+#cv-link{
+  padding-bottom:2vh;
+  padding-left: 1%;
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+#cv-link  a{
+
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+}
+
 
 /*------------ Info section ------------*/
 #info {
