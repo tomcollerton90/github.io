@@ -231,12 +231,25 @@ list-style-type: none;
 }
  #stylized-info,#stylized-info1 {
   display: inline;
-  font-size: 3vw;
-  letter-spacing: 2vw;
-  color: #FFEB3B;
+  font-size: 3.3vw;
+  letter-spacing: 1vw;
+  color: #FFF;
   font-family: 'happytime_italics', sans-serif  !important;
   text-transform: uppercase;
   margin:0;
+ 
+
+
+}
+
+.stylized-basic a{
+  text-decoration: underline;
+  font-size: 3.3vw;
+  letter-spacing: 0.45vw;
+  color: #FFEB3B;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  text-transform: uppercase;
  
 
 
@@ -252,11 +265,26 @@ list-style-type: none;
   font-size: 16px;
   font-family: 'Montserrat';
   font-style: normal;
-padding-top:5vh;
-  padding-left: 15%;
-  padding-right: 15%;
+  padding-top:15vh;
+ 
 
-  padding-bottom: 216px;
+  padding-bottom: 15vh;
+
+}
+.info-extended-col1 {
+  display: grid;
+  
+ padding-left: 20vw;
+ padding-right: 5vw;
+
+
+}
+
+.info-extended-col2 {
+  display: grid;
+
+ padding-right: 20vw;
+
 
 }
 #brands {
@@ -273,8 +301,13 @@ padding-top:5vh;
   padding-bottom: 216px;
 
 }
-
-
+#brand-text {
+padding-bottom: 2vw;
+text-transform: uppercase;
+font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+}
 /*------------ Brands ------------*/
 .brand-image{
   margin-top:216px;
@@ -295,10 +328,12 @@ padding-top:5vh;
   height: 20vh;
   text-align: right;
   text-transform: uppercase;
-
+padding-top: 8vh;;
 font-family: 'Montserrat';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 600;
+    text-decoration: underline;
+
 
 }
 
@@ -311,6 +346,8 @@ font-family: 'Montserrat';
   color:#000;
   font-size: 42px;
 padding-top:216px;
+text-decoration: underline;
+
   
 
   font-family: 'happytime_italics', sans-serif;
