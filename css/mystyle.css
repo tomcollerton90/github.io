@@ -368,14 +368,20 @@ font-family: 'Montserrat';
   text-align: center;
   text-transform: uppercase;
   color:#000;
-  font-size: 42px;
-padding-top:216px;
+  
 text-decoration: underline;
 
-  
+
+
 
   font-family: 'happytime_italics', sans-serif;
 
+
+}
+
+#contacts h1{
+  text-align: center;
+  font-size: 5vw;
 
 }
 /*------------ Footer ------------*/
