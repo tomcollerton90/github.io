@@ -1,17 +1,17 @@
 var para = {
   duration: 1500,
   delay: 1500,
-  distance: '50px',
 
-  origin: 'left',
+  origin: 'bottom',
   scale: 0,
   opacity: 0
 }
 
-var paraheader = {
+var index = {
   duration: 2000,
+  delay: 1500,
 
-  origin: 'left',
+  origin: 'top',
   scale: 0,
   opacity: 0
 }
@@ -57,7 +57,9 @@ $(document).ready(function() {
   // sr.reveal('.thumbnail ', images);
 
   sr.reveal('h1', imag);
-  // sr.reveal('.collerton', para);
+  sr.reveal('.nav-list', index);
+
+  sr.reveal('.collerton', para);
 
   // sr.reveal('p', para);
 
