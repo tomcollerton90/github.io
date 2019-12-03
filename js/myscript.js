@@ -1,6 +1,7 @@
 var para = {
-  duration: 2000,
-  delay: 200,
+  duration: 2500,
+  delay: 100,
+  distance: '100px',
 
   origin: 'left',
   scale: 0,
@@ -51,7 +52,7 @@ $(document).ready(function() {
   // sr.reveal('.thumbnail ', images);
 
   sr.reveal('h1', imag);
-  // sr.reveal('p', para);
+  sr.reveal('.collerton', para);
 
   // sr.reveal('p', para);
 
