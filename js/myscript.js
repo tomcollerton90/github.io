@@ -1,7 +1,7 @@
 var para = {
-  duration: 2500,
-  delay: 100,
-  distance: '100px',
+  duration: 1500,
+  delay: 1500,
+  distance: '50px',
 
   origin: 'left',
   scale: 0,
@@ -17,15 +17,20 @@ var paraheader = {
 }
 
 var imag = {
-      duration: 2500,
-      delay: 100,
-      opacity: 0
+      duration: 2000,
+      easing   : 'ease-in-out',
+      distance: '0px',
+
+      delay: 200,
+      opacity: 0,
+      scale: 1
 
      
 
   }
   var longimag = {
-      duration: 1500,
+      duration: 1300,
+
 
       scale: 0,
       opacity: 0
@@ -52,7 +57,7 @@ $(document).ready(function() {
   // sr.reveal('.thumbnail ', images);
 
   sr.reveal('h1', imag);
-  sr.reveal('.collerton', para);
+  // sr.reveal('.collerton', para);
 
   // sr.reveal('p', para);
 
