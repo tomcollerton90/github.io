@@ -162,9 +162,11 @@ nav ul li a:hover:before {
   /* align-items: center; */
   /* padding-top:5vh; */
   align-self: end;
+  padding-right: 1%;
+
     padding-top:18vh;
     justify-self: end;
-    padding-bottom:20vh;
+    /* padding-bottom:20vh; */
 
 
 
@@ -193,9 +195,9 @@ list-style-type: none;
 #cv-link{
   /* padding-bottom:2vh; */
   padding-left: 1%;
-  padding-top:20vh;
+  /* padding-top:20vh; */
   align-self: end;
-
+  padding-bottom: 2vh;
   text-decoration: none;
   font-family: 'Montserrat';
   font-style: normal;
@@ -203,14 +205,40 @@ list-style-type: none;
   text-transform: uppercase;
   color: #000;
 }
-#cv-link  a{
+#cv-link a{
 
-  text-decoration: none;
+  /* text-decoration: none;
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
   text-transform: uppercase;
-  color: #000;
+  color: #000; */
+ 
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* letter-spacing: 0.15em; */
+    
+    display: inline-block;
+    padding:  2px;
+    position: relative;
+  }
+  #cv-link a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    position: absolute;
+    background: var(--main-yellow);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #cv-link a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  
 }
 
 
@@ -262,12 +290,34 @@ list-style-type: none;
   font-weight: 600;
   text-transform: uppercase;
 
-  border-bottom: 3px solid #FFE700;
 
- 
-
-
+    text-transform: uppercase;
+    text-decoration: none;
+    /* letter-spacing: 0.15em; */
+    
+    display: inline-block;
+    padding:  2px;
+  }
+.stylized-basic a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    
+    background: var(--main-yellow);
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.stylized-basic a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  
 }
+
+
+
 /*------------ Info Extended ------------*/
 #info-extended {
   display: grid;
@@ -312,10 +362,9 @@ list-style-type: none;
   font-family: 'Montserrat';
   font-style: normal;
 padding-top:5vh;
-  padding-left: 15%;
-  padding-right: 15%;
+  
 
-  padding-bottom: 216px;
+  padding-bottom: 5vh;
 
 }
 #brand-text {
@@ -327,33 +376,38 @@ font-family: 'Montserrat';
 }
 /*------------ Brands ------------*/
 .brand-image{
-  margin-top:216px;
-  margin-bottom: 120px;
+  margin-top:5vh;
+  margin-bottom: 5vh;
   text-align: center;
 }
 
-.brand-logos img{
+img{
 
-    max-width: 100%;
-    height: auto;      
+  height:auto;
+  width: 90vw;    
 
 }
 
 /*------------ Showreel ------------*/
 #showreel {
-  background-color: #D9D9D9;
-  height: 80vh;
+  background-color: #fff;
 
+
+}
+#showreel img{
+  height:auto;
+  width: 90vw;    
 
 }
 
 #portfolio-text {
   background-color: #fff;
   height: 20vh;
+  padding-right: 1vw;
   text-align: right;
   text-transform: uppercase;
-padding-top: 8vh;;
-font-family: 'Montserrat';
+  padding-top: 8vh;;
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
     text-decoration: underline;
