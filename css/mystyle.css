@@ -205,7 +205,7 @@ list-style-type: none;
   text-transform: uppercase;
   color: #000;
 }
-#cv-link a{
+.reference-links a{
 
   /* text-decoration: none;
   font-family: 'Montserrat';
@@ -223,7 +223,7 @@ list-style-type: none;
     padding:  2px;
     position: relative;
   }
-  #cv-link a:after {    
+.reference-links a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
     content: "";
@@ -235,7 +235,7 @@ list-style-type: none;
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
     width: 0;
   }
-  #cv-link a:hover:after { 
+.reference-links a:hover:after { 
     width: 100%; 
     left: 0; 
   
@@ -319,41 +319,9 @@ list-style-type: none;
 
 
 /*------------ Info Extended ------------*/
-#info-extended {
-  display: grid;
-  grid-template-columns: 50vw 50vw;
-
-  width: 100%;
-  background-color: #000;
-  color: #fff;
-  font-family: 'Montserrat';
-  font-size: 1.65rem;
-  line-height: 3.3rem;
-  font-style: normal;
-  padding-top:20vh;
- 
-
-  padding-bottom: 15vh;
-
-}
-.info-extended-col1 {
-  display: grid;
-  
- padding-left: 16vw;
- padding-right: 4vw;
-
-
-}
 
 
 
-.info-extended-col2 {
-  display: grid;
-
- padding-right: 18vw;
-
-
-}
 #brands {
   width: 100%;
   background-color: #000;
@@ -395,9 +363,12 @@ img{
 
 }
 #showreel img{
-  height:auto;
-  width: 90vw;    
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  height:auto;
+  width:100%;    
 }
 
 #portfolio-text {
@@ -419,38 +390,120 @@ img{
 #contacts {
   background-color: var(--main-yellow);
   height: 80vh;
-  text-align: center;
   text-transform: uppercase;
   color:#000;
+
   
-text-decoration: underline;
-
-
-
-
   font-family: 'happytime_italics', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 
 }
 
-#contacts h1{
-  text-align: center;
-  font-size: 5vw;
+ 
+#contacts a{
+  text-decoration: none;
+  font-size: 6vw;
+  color: #000;
+  font-family: 'happytime_italics', sans-serif;
+  text-transform: uppercase;
+
+
+    text-transform: uppercase;
+    text-decoration: none;
+    /* letter-spacing: 0.15em; */
+    
+    display: inline-block;
+    padding:  2px;
+  }
+  #contacts a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 3px;
+    left: 0;
+    
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  #contacts a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  
+}
+
+#contacts p{
+max-width: 100%;
+margin-bottom: 12px;
+margin-left:1vw;
+
+align-self: flex-start;
+
 
 }
 /*------------ Footer ------------*/
 
+footer {
+  display: flex !important;
+  justify-content: space-between;
+  padding: 1vw;
+  margin-bottom: 2vh;
+  text-transform: uppercase;
+font-family: 'Montserrat';
+}
 
 /*------------- Mobile version --------------*/
 
   
   @media only screen and (max-width: 600px) {
+    #info-extended {
+    
+    
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      font-family: 'Montserrat';
+      font-size: 1.65rem;
+      line-height: 3.3rem;
+      font-style: normal;
 
+    
+
+      padding-bottom: 15vh;
+      padding-left: 4vw;
+    
+      padding-right: 4vw;
+
+    }
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px){
 
+
+
+  #info-extended {
+    
+    
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 1.65rem;
+    line-height: 3.3rem;
+    font-style: normal;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+
+    padding-bottom: 15vh;
+  
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -461,7 +514,41 @@ text-decoration: underline;
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+  #info-extended {
+    display: grid;
+    grid-template-columns: 50vw 50vw;
+  
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    font-family: 'Montserrat';
+    font-size: 1.65rem;
+    line-height: 3.3rem;
+    font-style: normal;
+    padding-top:20vh;
+   
+  
+    padding-bottom: 15vh;
+  
+  }
+  .info-extended-col1 {
+    display: grid;
+    
+   padding-left: 16vw;
+   padding-right: 4vw;
+  
+  
+  }
+  
+  
+  
+  .info-extended-col2 {
+    display: grid;
+  
+   padding-right: 18vw;
+  
+  
+  }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
