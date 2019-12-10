@@ -70,7 +70,13 @@ nav {
 
 }
 
-.nav-list a {
+.nav-list-link1,.nav-list-link2 {
+  display: inline-block;
+  padding-left: 8vw;
+
+}
+
+/* .nav-list a {
   text-decoration: none;
   padding-left: 10vw;
   font-family: 'Montserrat';
@@ -78,11 +84,46 @@ nav {
   font-weight: 600;
   text-transform: uppercase;
   color: #000;
-}
+} */
 
 nav a:hover {
   color: #000;;
 }
+
+.nav-list a{
+
+  text-decoration: none;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #000;
+ 
+
+    /* letter-spacing: 0.15em; */
+    
+    display: inline-block;
+    position: relative;
+  }
+
+.nav-list a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 0;
+    position: absolute;
+    background: #000;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+.nav-list a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  
+}
+
 
 /* nav ul li a:before {
   content: "";
@@ -136,11 +177,32 @@ nav ul li a:hover:before {
   text-transform: uppercase;
   cursor: default;
   letter-spacing: 4vw;
-  padding-left:1%;
+  /* padding-left: 4vw; */
 
   position: absolute;
 }
 
+
+
+.collerton {
+  position: relative;
+  font-weight: 200;
+  font-size: 4em;
+}
+
+.collerton .text-wrapper {
+  position: relative;
+  display: inline-block;
+  padding-top: 3vw;
+  padding-left: 0.7vw;
+  overflow: hidden;
+}
+
+.collerton .letter {
+  transform-origin: 50% 100%;
+  display: inline-block;
+  line-height: 1em;
+}
 /*------------ CV and links section ------------*/
 
 
@@ -149,7 +211,7 @@ nav ul li a:hover:before {
   grid-template-columns: 50vw 50vw;
   width: 100%;
   background-color: #fff;
-  height:42vh;
+  height:55vh;
   padding-right:1%;
   padding-top:2vh;
   padding-bottom:2vh;
@@ -175,6 +237,8 @@ nav ul li a:hover:before {
 }
 .reference-links ul li  {
 list-style-type: none;
+line-height: 4vh;
+
 
 }
 .reference-links ul li a {
@@ -185,7 +249,6 @@ list-style-type: none;
   font-weight: 600;
   text-transform: uppercase;
   color: #000;
-  line-height: 4.5vh;
 }
 
 .reference-links a:hover {
@@ -198,6 +261,7 @@ list-style-type: none;
   /* padding-top:20vh; */
   align-self: end;
   padding-bottom: 2vh;
+  line-height: 4vh;
   text-decoration: none;
   font-family: 'Montserrat';
   font-style: normal;
@@ -220,7 +284,6 @@ list-style-type: none;
     /* letter-spacing: 0.15em; */
     
     display: inline-block;
-    padding:  2px;
     position: relative;
   }
 .reference-links a:after {    
@@ -290,14 +353,13 @@ list-style-type: none;
   font-weight: 600;
   text-transform: uppercase;
 
-
     text-transform: uppercase;
     text-decoration: none;
     /* letter-spacing: 0.15em; */
     
     display: inline-block;
     padding:  2px;
-  }
+    }
 .stylized-basic a:after {    
     background: none repeat scroll 0 0 transparent;
     bottom: 0;
@@ -308,7 +370,7 @@ list-style-type: none;
     
     background: var(--main-yellow);
     transition: width 0.3s ease 0s, left 0.3s ease 0s;
-    width: 0;
+   width:0;
   }
 .stylized-basic a:hover:after { 
     width: 100%; 
@@ -394,8 +456,10 @@ img{
   color:#000;
 
   
-  font-family: 'happytime_italics', sans-serif;
-  display: flex;
+  
+  
+
+    display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -403,10 +467,17 @@ img{
 
 }
 
+#contacts p{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+}
+
+
  
 #contacts a{
   text-decoration: none;
-  font-size: 6vw;
+  font-size: 4vw;
   color: #000;
   font-family: 'happytime_italics', sans-serif;
   text-transform: uppercase;
@@ -455,12 +526,14 @@ footer {
   margin-bottom: 2vh;
   text-transform: uppercase;
 font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
 }
 
 /*------------- Mobile version --------------*/
 
   
-  @media only screen and (max-width: 600px) {
+  @media screen and (max-width: 767px) {
     #info-extended {
     
     
@@ -480,6 +553,13 @@ font-family: 'Montserrat';
       padding-right: 4vw;
 
     }
+
+    .nav-list-link1,.nav-list-link2 {
+      display: block;
+      padding-left: 8vw;
+    
+    }
+    
   }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -487,33 +567,13 @@ font-family: 'Montserrat';
 
 
 
-  #info-extended {
-    
-    
-    width: 100%;
-    background-color: #000;
-    color: #fff;
-    font-family: 'Montserrat';
-    font-size: 1.65rem;
-    line-height: 3.3rem;
-    font-style: normal;
-
-    padding-left: 4vw;
-    padding-right: 4vw;
-
-    padding-bottom: 15vh;
-  
-  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px)
-{
 
-}
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media  screen and (min-width: 768px) {
   #info-extended {
     display: grid;
     grid-template-columns: 50vw 50vw;

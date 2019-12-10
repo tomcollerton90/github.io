@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Tom collerton</title>
+    <title>Tom Collerton</title>
     <!--Bootstrap-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!--Jquery-->
@@ -13,6 +13,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
 
     <script src="js/myscript.js"></script>
     <script src="js/scrollreveal.min.js"></script>
@@ -21,14 +22,23 @@
 <body>
     <nav id="navbar">
         <div class="nav-list">
-          <a href="#welcome-section">About</a>
-          <a href="#contact">Contact</a>
+          <div class="nav-list-link1">
+            
+          <a href="#info-extended">About</a>
+        </div>
+        <div class="nav-list-link1">
+          <a href="#contacts">Contact</a>
+        </div>
         </div>
       </nav>
       
       <section id="welcome-section">
         <h1>Tom</h1>
-        <p class = "collerton">Collerton</p>
+        <p class = "collerton">
+            <span class="text-wrapper">
+                <span class="letters">Collerton</span>
+              </span>
+        </p>
       </section>
       
       <section class="reference-links">
@@ -36,20 +46,21 @@
         <a href="welcome-section">CV</a>
       </div>
           <ul class="reference-links-nav">
-            <li><a href="#welcome-section">dribble</a></li>
-            <li><a href="#contact">behance</a></li>
-            <li><a href="#welcome-section">linkedin</a></li>
-            <li><a href="#welcome-section">IG</a></li>
+            <li><a href="https://dribbble.com/tomcollerton" target="_blank">dribbble</a></li>
+            <li><a href="https://www.behance.net/collerton" target="_blank">behance</a></li>
+            <li><a href="https://www.linkedin.com/in/tom-collerton-6b5b7b93/" target="_blank">linkedin</a></li>
+            <li><a href="https://www.instagram.com/tomcollerton/" target="_blank">IG</a></li>
           </ul>
         </section>
 
       <section class="info">
+        <div class="info-wrapper">
         <p class="stylized-basic">I’m a designer working on a </p></br>
         <p id="stylized-info">myriad of projects </p>
           <p class= "stylized-basic">  from start to finish and </p> 
           <p id="stylized-info1">everything in between.</p>
           <p class="stylized-basic">Right now I’m doing my thing at <a href="https://sinnerschrader.com/">SinnerSchrader</a>.</p>
-        
+        </div>
       </section>
       
       <section id="info-extended">
