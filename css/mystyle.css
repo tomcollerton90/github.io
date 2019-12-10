@@ -534,6 +534,83 @@ font-family: 'Montserrat';
 
   
   @media screen and (max-width: 767px) {
+    .info {
+      display: block;
+      background-color: #000;
+      width:100%;
+      height: 100vh;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-weight: 400;
+      padding-top:10vh;
+    }
+    
+    .stylized-basic{
+      display: inline;
+      font-size: 8vw;
+      letter-spacing: 0.45vw;
+      color: #FFEB3B;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      text-transform: uppercase;
+      margin:0;
+      margin-block-start: 0;
+        margin-block-end: 0;
+        margin-inline-start: 0px;
+        margin-inline-end: 0px;
+      
+    }
+     #stylized-info,#stylized-info1 {
+      display: inline;
+      font-size: 8vw;
+      letter-spacing: 0.37vw;
+      color: #FFF;
+      font-family: 'happytime_italics', sans-serif  !important;
+      text-transform: uppercase;
+      margin:0;
+     
+    
+    
+    }
+    
+    .stylized-basic a{
+      text-decoration: none;
+      font-size: 8vw;
+      letter-spacing: 0.45vw;
+      color: #FFEB3B;
+      font-family: 'Montserrat';
+      font-weight: 600;
+      text-transform: uppercase;
+    
+        text-transform: uppercase;
+        text-decoration: none;
+        /* letter-spacing: 0.15em; */
+        
+        display: inline-block;
+        padding:  2px;
+        }
+    .stylized-basic a:after {    
+        background: none repeat scroll 0 0 transparent;
+        bottom: 0;
+        content: "";
+        display: block;
+        height: 3px;
+        left: 0;
+        
+        background: var(--main-yellow);
+        transition: width 0.3s ease 0s, left 0.3s ease 0s;
+       width:0;
+      }
+    .stylized-basic a:hover:after { 
+        width: 100%; 
+        left: 0; 
+      
+    }
+    
+    
+    
+   
+   
     #info-extended {
     
     

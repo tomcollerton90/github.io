@@ -21,16 +21,23 @@ var index = {
 
 var imag = {
       duration: 2000,
-      easing   : 'ease-in-out',
-      distance: '0px',
+      easing: 'ease-in-out',
+      origin: 'bottom',
 
       delay: 200,
       opacity: 0,
       scale: 1
 
-     
-
   }
+  var infoanimation = {
+    duration: 500,
+    easing: 'ease-in',
+    origin: 'bottom',
+
+    opacity: 0,
+    scale: 1
+
+}
   var longimag = {
       duration: 1300,
 
@@ -47,8 +54,9 @@ $(document).ready(function() {
 
   sr.reveal('h1', imag);
   sr.reveal('.nav-list', index);
-  sr.reveal('.info-wrapper', imag);
-  
+  sr.reveal('.info-wrapper', infoanimation);
+  sr.reveal('.info-extended-col1', infoanimation);
+  sr.reveal('.info-extended-col2', infoanimation);
 
  
 var textWrapper = document.querySelector('.collerton .letters');
