@@ -67,7 +67,9 @@ $(document).ready(function() {
   sr.reveal('.info-extended-col1', infoanimation);
   sr.reveal('.info-extended-col2', infoanimation);
   sr.reveal(' .images-wrapper', infoanimation1);
- 
+  sr.reveal('#contacts', infoanimation1);
+
+  
 
  
 var textWrapper = document.querySelector('.collerton .letters');
