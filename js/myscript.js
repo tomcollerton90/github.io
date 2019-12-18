@@ -10,7 +10,7 @@ var para = {
 var index = {
   duration: 2000,
   delay: 1200,
-  distance: '5vh',
+  distance: '100px',
 
   origin: 'top',
   scale: 0,
@@ -38,6 +38,15 @@ var imag = {
     scale: 1
 
 }
+var infoanimation1 = {
+  duration: 1000,
+  easing: 'ease-in',
+  origin: 'bottom',
+
+  opacity: 0,
+  scale: 1
+
+}
   var longimag = {
       duration: 1300,
 
@@ -57,6 +66,8 @@ $(document).ready(function() {
   sr.reveal('.info-wrapper', infoanimation);
   sr.reveal('.info-extended-col1', infoanimation);
   sr.reveal('.info-extended-col2', infoanimation);
+  sr.reveal(' .images-wrapper', infoanimation1);
+ 
 
  
 var textWrapper = document.querySelector('.collerton .letters');
